@@ -1,11 +1,8 @@
 {
-  "name": "node-combine-mq",
-  "version": "1.0.0",
+  "name": "combine-mq",
+  "version": "0.0.0",
   "description": "Combine matching media queries into one media query definition.",
-  "main": "index.js",
-  "scripts": {
-    "test": "grunt test"
-  },
+  "main": "lib/combine-mq.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/buildingblocks/node-combine-mq"
@@ -33,5 +30,16 @@
   "bugs": {
     "url": "https://github.com/buildingblocks/node-combine-mq/issues"
   },
-  "homepage": "https://github.com/buildingblocks/node-combine-mq"
+  "homepage": "https://github.com/buildingblocks/node-combine-mq",
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
 }
