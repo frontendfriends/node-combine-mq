@@ -2,5 +2,5 @@
 
 var combineMq = require('../lib/combine-mq.js');
 
-combineMq.awesome();
+combineMq.init();
 // => awesome

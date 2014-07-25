@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Combine matching media queries into one media query definition.",
   "main": "lib/combine-mq.js",
+  "engines": {
+    "node": "v0.10.x"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/buildingblocks/node-combine-mq"
@@ -31,15 +34,23 @@
     "url": "https://github.com/buildingblocks/node-combine-mq/issues"
   },
   "homepage": "https://github.com/buildingblocks/node-combine-mq",
+  "dependencies": {},
   "devDependencies": {
+    "commander": "^2.3.0",
+    "css-parse": "^2.0.0",
+    "css-stringify": "^2.0.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-nodeunit": "^0.3.3",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-notify": "^0.3.0",
+    "jshint-stylish": "^0.2.0",
     "load-grunt-tasks": "^0.4.0",
-    "time-grunt": "^0.3.1",
-    "jshint-stylish": "^0.2.0"
+    "time-grunt": "^0.3.1"
   },
   "scripts": {
     "test": "grunt test"
+  },
+  "bin": {
+    "cmq": "./cli.js"
   }
 }
