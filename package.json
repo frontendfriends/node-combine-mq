@@ -1,0 +1,37 @@
+{
+  "name": "node-combine-mq",
+  "version": "1.0.0",
+  "description": "Combine matching media queries into one media query definition.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buildingblocks/node-combine-mq"
+  },
+  "keywords": [
+    "Media",
+    "Queries",
+    "Combine",
+    "Optimisation",
+    "Less",
+    "Sass",
+    "CSS"
+  ],
+  "contributors": [
+    {
+      "name": "Daniel Furze",
+      "email": "d.furze@building-blocks.com"
+    },
+    {
+      "name": "Paul Welsh",
+      "email": "p.welsh@building-blocks.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buildingblocks/node-combine-mq/issues"
+  },
+  "homepage": "https://github.com/buildingblocks/node-combine-mq"
+}
