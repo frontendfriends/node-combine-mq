@@ -36,6 +36,7 @@
   "homepage": "https://github.com/buildingblocks/node-combine-mq",
   "dependencies": {},
   "devDependencies": {
+    "chalk": "^0.5.1",
     "commander": "^2.3.0",
     "css-parse": "^2.0.0",
     "css-stringify": "^2.0.0",
@@ -45,6 +46,7 @@
     "grunt-notify": "^0.3.0",
     "jshint-stylish": "^0.2.0",
     "load-grunt-tasks": "^0.4.0",
+    "mkdirp": "^0.5.0",
     "time-grunt": "^0.3.1"
   },
   "scripts": {

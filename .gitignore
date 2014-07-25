@@ -7,5 +7,9 @@
 # Installed dependencies
 node_modules
 
+# Generated files
+tmp
+test/examples
+
 # Debug
 *.log

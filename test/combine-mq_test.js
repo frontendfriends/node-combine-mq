@@ -24,11 +24,10 @@ var task = require('../lib/combine-mq');
  
 exports.combineMq = {
     setUp: function(done) {
-      // setup here
       done();
     },
-    'combineMq': function(test) {
-      test.equal(task.init('test/examples/test.css'), 'combineMq', 'should say combineMq.');
+    'getFile': function(test) {
+      test.equal(task.getFile('test/examples/test.css'), 'combineMq', 'should return a valid file.');
       test.done();
   }
 };
