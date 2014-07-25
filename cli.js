@@ -10,7 +10,7 @@
 
  program
  .command('combine <fileName>')
- .description('Desciption...')
+ .description('Description...')
  .action(function (fileName) {
    task.init(fileName);
 });

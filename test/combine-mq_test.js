@@ -21,14 +21,14 @@ var task = require('../lib/combine-mq');
   test.doesNotThrow(block, [error], [message])
   test.ifError(value)
 */
-
+ 
 exports.combineMq = {
     setUp: function(done) {
       // setup here
       done();
     },
     'combineMq': function(test) {
-      test.equal(task.init(), 'combineMq', 'should be awesome.');
+      test.equal(task.init('test/examples/test.css'), 'combineMq', 'should say combineMq.');
       test.done();
   }
 };
