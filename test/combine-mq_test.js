@@ -1,34 +1,16 @@
 'use strict';
 
-//var task = require('../lib/combine-mq');
+// var assert = require('assert');
 
-/*
-======== A Handy Little Nodeunit Reference ========
-  https://github.com/caolan/nodeunit
+// var task = require('../lib/combine-mq');
 
-  Test methods:
-  test.expect(numAssertions)
-  test.done()
-  Test assertions:
-  test.ok(value, [message])
-  test.equal(actual, expected, [message])
-  test.notEqual(actual, expected, [message])
-  test.deepEqual(actual, expected, [message])
-  test.notDeepEqual(actual, expected, [message])
-  test.strictEqual(actual, expected, [message])
-  test.notStrictEqual(actual, expected, [message])
-  test.throws(block, [error], [message])
-  test.doesNotThrow(block, [error], [message])
-  test.ifError(value)
-*/
- 
-exports.combineMq = {
-    setUp: function(done) {
-      done();
-    },
-    'getFile': function(test) {
-      test.equal('test', 'test', 'should be test');
-      //test.equal(task.getFile('test/examples/test.css'), 'combineMq', 'should return a valid file.');
-      test.done();
-  }
-};
+// describe('Combine Media Queries', function() {
+//   describe('getFile', function() {
+//     it('should return a file with contents', function() {
+
+//       var file = task.getFile('./test/examples/test.css');
+      
+//       assert.equal(file, 'combineMq'); 
+//     });
+//   });
+// }); 

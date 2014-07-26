@@ -11,9 +11,34 @@ module.exports = function (grunt) {
     nodeunit: {
       files: ['test/**/*_test.js']
     },
+    mochaTest: {
+      test: {
+        options: {
+          reporter: 'nyan'
+        },
+        src: [
+        'test/**/*.js'
+        ]
+      }
+    },
     jshint: {
       options: {
-        jshintrc: '.jshintrc',
+        'curly': true,
+        'eqeqeq': true,
+        'immed': true,
+        'latedef': true,
+        'newcap': true,
+        'noarg': true,
+        'sub': true,
+        'undef': true,
+        'unused': true,
+        'boss': true,
+        'eqnull': true,
+        'node': true,
+        globals: {
+          'describe': true,
+          'it': true
+        },
         reporter: require('jshint-stylish')
       },
       gruntfile: {
@@ -21,12 +46,12 @@ module.exports = function (grunt) {
       },
       lib: {
         src: [
-          'lib/**/*.js'
-          ]
+        'lib/**/*.js'
+        ]
       },
       test: {
         src: [
-          'test/**/*.js'
+        'test/**/*.js'
         ]
       }
     },
@@ -40,35 +65,35 @@ module.exports = function (grunt) {
       lib: {
         files: '<%= jshint.lib.src %>',
         tasks: [
-          'jshint:lib', 
-          'nodeunit'
+          'jshint:lib',
+          'mochaTest',
         ]
       },
       test: {
         files: '<%= jshint.test.src %>',
         tasks: [
-          'jshint:test', 
-          'nodeunit'
+          'jshint:test',
+          'mochaTest',
         ]
+        }
       }
-    }
-  });
+    });
 
   // Default task
   grunt.registerTask('default', [
     'dev'
-  ]);
+    ]);
 
   // Dev task
   grunt.registerTask('dev', [
     'jshint', 
-    'nodeunit',
+    'mochaTest',
     'watch'
-  ]);
+    ]);
   
   // Test task
   grunt.registerTask('test', [
     'jshint', 
-    'nodeunit'
-  ]);
+    'mochaTest'
+    ]);
 };
