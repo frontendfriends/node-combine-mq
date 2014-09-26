@@ -21,7 +21,7 @@
   test: function (test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/combined.css');
+    var actual = grunt.file.read('test/actual/combined.css');
     var expected = grunt.file.read('test/expected/test.css');
     test.equal(actual, expected, 'should combine media queries from test.css');
 
