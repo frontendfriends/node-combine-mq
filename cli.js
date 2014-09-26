@@ -4,12 +4,11 @@
 
 var task = require('./lib/combine-mq');
 
-// These options will come from the Grunt task
 
+// These options will come from the Grunt task
 // task.init({
-// 	'inputFileName': 'test/examples/test.css',
-// 	'outputFilePath': 'dev/',
-// 	'outputFileName': 'combined.css'
+// 	'src': 'test/examples/test.css',
+// 	'dest': 'test/actual/combined.css'
 // });
 
 
@@ -17,12 +16,11 @@ var task = require('./lib/combine-mq');
 var program = require('commander');
 
 program
-.command('combine <inputFileName> <outputFilePath> <outputFileName>')
-.action(function (inputFileName, outputFilePath, outputFileName) {
+.command('combine <src> <dest>')
+.action(function (src, dest) {
 	task.init({
-		'inputFileName': inputFileName,
-		'outputFilePath': outputFilePath,
-		'outputFileName': outputFileName
+		'src': src,
+		'dest': dest
 	});
 });
 
