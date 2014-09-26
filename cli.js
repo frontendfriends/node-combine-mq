@@ -2,19 +2,27 @@
 
 'use strict';
 
-var task = require('./lib/combine-mq'),
-packageJson = require('./package'),
-program = require('commander');
+var task = require('./lib/combine-mq');
 
-program.version(packageJson.version);
+// These options will come from the Grunt task
+
+// task.init({
+// 	'inputFileName': 'test/examples/test.css',
+// 	'outputFilePath': 'dev/',
+// 	'outputFileName': 'combined.css'
+// });
+
+
+// Use the CLi whilst building the Node task
+var program = require('commander');
 
 program
-.command('combine <fileName> <filePath>')
-.description('Description...')
-.action(function (fileName, filePath) {
+.command('combine <inputFileName> <outputFilePath> <outputFileName>')
+.action(function (inputFileName, outputFilePath, outputFileName) {
 	task.init({
-		'fileName': fileName,
-		'filePath': filePath
+		'inputFileName': inputFileName,
+		'outputFilePath': outputFilePath,
+		'outputFileName': outputFileName
 	});
 });
 

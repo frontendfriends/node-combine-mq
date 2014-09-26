@@ -9,6 +9,9 @@ node_modules
 
 # Generated files
 docs
+
+# Dev
+dev
 tmp
 
 # Debug
