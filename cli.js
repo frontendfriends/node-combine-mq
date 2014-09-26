@@ -9,10 +9,13 @@ program = require('commander');
 program.version(packageJson.version);
 
 program
-.command('combine <fileName>')
+.command('combine <fileName> <filePath>')
 .description('Description...')
-.action(function (fileName) {
-	task.init(fileName);
+.action(function (fileName, filePath) {
+	task.init({
+		'fileName': fileName,
+		'filePath': filePath
+	});
 });
 
 program.parse(process.argv);
