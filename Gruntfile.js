@@ -1,3 +1,11 @@
+/*
+* combine-mq
+* https://github.com/buildingblocks/node-combine-mq
+*
+* Copyright (c) 2014 Building Blocks
+* Licensed under the MIT license.
+*/
+
 'use strict';
 
 module.exports = function (grunt) {
@@ -86,14 +94,14 @@ module.exports = function (grunt) {
 
   // Dev task
   grunt.registerTask('dev', [
-    'jshint', 
+    'jshint',
     'mochaTest',
     'watch'
     ]);
-  
+
   // Test task
   grunt.registerTask('test', [
-    'jshint', 
+    'jshint',
     'mochaTest'
     ]);
 };
