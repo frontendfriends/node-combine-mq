@@ -59,6 +59,7 @@
     "commander": "^2.3.0",
     "css-parse": "^2.0.0",
     "css-stringify": "^2.0.0",
+    "dammit": "^0.5.1",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-nodeunit": "^0.3.3",
     "grunt-contrib-watch": "^0.6.1",
