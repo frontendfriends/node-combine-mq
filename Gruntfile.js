@@ -23,22 +23,7 @@ module.exports = function (grunt) {
     },
     jshint: {
       options: {
-        'curly': true,
-        'eqeqeq': true,
-        'immed': true,
-        'latedef': true,
-        'newcap': true,
-        'noarg': true,
-        'sub': true,
-        'undef': true,
-        'unused': true,
-        'boss': true,
-        'eqnull': true,
-        'node': true,
-        globals: {
-          'describe': true,
-          'it': true
-        },
+      	jshintrc: true,
         reporter: require('jshint-stylish')
       },
       gruntfile: {
@@ -86,14 +71,14 @@ module.exports = function (grunt) {
 
   // Dev task
   grunt.registerTask('dev', [
-    'jshint', 
+    'jshint',
     'mochaTest',
     'watch'
     ]);
-  
+
   // Test task
   grunt.registerTask('test', [
-    'jshint', 
+    'jshint',
     'mochaTest'
     ]);
 };
