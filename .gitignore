@@ -9,6 +9,7 @@ node_modules
 
 # Generated files
 docs
+test/actual
 
 # Dev
 dev
