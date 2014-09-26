@@ -8,6 +8,7 @@
 node_modules
 
 # Generated files
+docs
 tmp
 
 # Debug

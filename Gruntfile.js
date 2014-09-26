@@ -9,9 +9,18 @@ module.exports = function (grunt) {
   // Project configuration
   grunt.initConfig({
   	config: {
+  		docs: 'docs',
   		gruntfile: 'Gruntfile.js'
   	},
 
+  	// Housekeeping
+		clean: {
+			docs: [
+				'<%= config.docs %>/'
+			]
+		},
+
+  	// Tests
   	nodeunit: {
   		files: [
   		'test/**/*_test.js'
@@ -27,6 +36,8 @@ module.exports = function (grunt) {
   			]
   		}
   	},
+
+  	// Scripts
   	jshint: {
   		options: {
   			jshintrc: true,
@@ -46,6 +57,21 @@ module.exports = function (grunt) {
   			]
   		}
   	},
+
+  	jsdoc: {
+  		all: {
+  			src: [
+  			'lib/**/*.js'
+  			],
+  			options: {
+  				destination: 'docs',
+  				template: 'node_modules/grunt-jsdoc/node_modules/ink-docstrap/template',
+  				configure: '.jsdoc.conf.json'
+  			}
+  		}
+  	},
+
+  	// Watchers
   	watch: {
   		gruntfile: {
   			files: '<%= jshint.gruntfile.src %>',
@@ -81,6 +107,12 @@ module.exports = function (grunt) {
   	'mochaTest',
   	'watch'
   	]);
+
+   // Dev task
+   grunt.registerTask('docs', [
+   	'clean:docs',
+   	'jsdoc'
+   	]);
 
   // Test task
   grunt.registerTask('test', [

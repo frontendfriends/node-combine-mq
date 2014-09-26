@@ -60,14 +60,17 @@
     "css-parse": "^2.0.0",
     "css-stringify": "^2.0.0",
     "dammit": "^0.5.1",
+    "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-nodeunit": "^0.3.3",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsdoc": "^0.5.7",
     "grunt-mocha-test": "^0.11.0",
     "grunt-notify": "^0.3.0",
     "jshint-stylish": "^0.2.0",
     "load-grunt-tasks": "^0.4.0",
     "mkdirp": "^0.5.0",
+    "superb": "^1.0.3",
     "time-grunt": "^0.3.1"
   },
   "scripts": {
