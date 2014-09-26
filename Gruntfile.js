@@ -10,8 +10,35 @@ module.exports = function (grunt) {
   grunt.initConfig({
   	config: {
   		docs: 'docs',
-  		gruntfile: 'Gruntfile.js'
+  		gruntfile: 'Gruntfile.js',
+  		temp: 'tmp'
   	},
+
+
+  	// Watchers
+  	watch: {
+  		gruntfile: {
+  			files: '<%= jshint.gruntfile.src %>',
+  			tasks: [
+  			'jshint:gruntfile'
+  			]
+  		},
+  		lib: {
+  			files: '<%= jshint.lib.src %>',
+  			tasks: [
+  			'jshint:lib',
+  			'mochaTest',
+  			]
+  		},
+  		test: {
+  			files: '<%= jshint.test.src %>',
+  			tasks: [
+  			'jshint:test',
+  			'mochaTest'
+  			]
+  		}
+  	},
+
 
   	// Housekeeping
 		clean: {
@@ -20,22 +47,14 @@ module.exports = function (grunt) {
 			]
 		},
 
+
   	// Tests
   	nodeunit: {
   		files: [
   		'test/**/*_test.js'
   		]
   	},
-  	mochaTest: {
-  		test: {
-  			options: {
-  				reporter: 'nyan'
-  			},
-  			src: [
-  			'test/**/*.js'
-  			]
-  		}
-  	},
+
 
   	// Scripts
   	jshint: {
@@ -69,30 +88,6 @@ module.exports = function (grunt) {
   				configure: '.jsdoc.conf.json'
   			}
   		}
-  	},
-
-  	// Watchers
-  	watch: {
-  		gruntfile: {
-  			files: '<%= jshint.gruntfile.src %>',
-  			tasks: [
-  			'jshint:gruntfile'
-  			]
-  		},
-  		lib: {
-  			files: '<%= jshint.lib.src %>',
-  			tasks: [
-  			'jshint:lib',
-  			'mochaTest',
-  			]
-  		},
-  		test: {
-  			files: '<%= jshint.test.src %>',
-  			tasks: [
-  			'jshint:test',
-  			'mochaTest'
-  			]
-  		}
   	}
   });
 
@@ -104,7 +99,7 @@ module.exports = function (grunt) {
   // Dev task
   grunt.registerTask('dev', [
   	'jshint',
-  	'mochaTest',
+  	'nodeunit',
   	'watch'
   	]);
 
@@ -117,6 +112,6 @@ module.exports = function (grunt) {
   // Test task
   grunt.registerTask('test', [
   	'jshint',
-  	'mochaTest'
+  	'nodeunit'
   	]);
 };
