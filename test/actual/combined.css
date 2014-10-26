@@ -6,8 +6,6 @@ body {
 	color:#000;
 	min-height:100%;
 	width:100%;
-	*zoom:1;
-	zoom:1;
 	font-size:16px;
 	font-size:1rem;
 	line-height:20px;
@@ -43,8 +41,6 @@ body:after {
 	margin:0 1.25rem;
 	max-width:1140px;
 	max-width:71.25rem;
-	*zoom:1;
-	zoom:1;
 }
 
 .container:before,.container:after {
@@ -101,35 +97,6 @@ img {
 	margin:0 20px;
 }
 
-@media (min-width: 30em) {
-	#monitor-width {
-		width:480px;
-	}
-
-}
-@media (min-width: 37.5em) {
-	#monitor-width {
-		width:600px;
-	}
-
-}
-@media (min-width: 48em) {
-	.container {
-		margin:0 25px;
-		margin:0 1.5625rem;
-	}
-
-	#monitor-width {
-		width:768px;
-	}
-
-}
-@media (min-width: 60.625em) {
-	#monitor-width {
-		width:970px;
-	}
-
-}
 @media (min-width: 71.25em) {
 	.container {
 		margin-right:auto;
@@ -147,8 +114,40 @@ img {
 
 }
 
+@media (min-width: 30em) {
+	#monitor-width {
+		width:480px;
+	}
+
+}
+
+@media (min-width: 60.625em) {
+	#monitor-width {
+		width:970px;
+	}
+
+}
+
+@media (min-width: 37.5em) {
+	#monitor-width {
+		width:600px;
+	}
+
+}
+
+@media (min-width: 48em) {
+	.container {
+		margin:0 25px;
+		margin:0 1.5625rem;
+	}
+
+	#monitor-width {
+		width:768px;
+	}
+}
+
 @media only screen {
-	/*   hihihih */
+/*   hihihih */
 	html{
 		color:red; /* hsdfjsdjhf */
 		line-height: 200;
@@ -163,34 +162,27 @@ img {
 }
 
 @-webkit-keyframes NAME-YOUR-ANIMATION {
-	/*   hahahah */
-0%   { opacity: 0; /* helphelp */ }
-100% { opacity: 1; }
+/*   hahahah */
+  0%   { opacity: 0; /* helphelp */ }
+  100% { opacity: 1; }
 }
 @-moz-keyframes NAME-YOUR-ANIMATION {
-	0%   { opacity: 0; }
-	100% { opacity: 1; }
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 @-o-keyframes NAME-YOUR-ANIMATION {
-	0%   { opacity: 0; }
-	100% { opacity: 1; }
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 @keyframes NAME-YOUR-ANIMATION {
-	0%   { opacity: 0; }
-	100% { opacity: 1; }
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @-moz-document url-prefix(http://www.example.com) {
 
 	p {
 		height: 5px;
-	}
-
-	@media (min-width: 767px) {
-
-		p {
-			height: 10px;
-		}
 	}
 
 	@media (min-width: 767px) {
@@ -207,5 +199,3 @@ img {
 		color: red;
 	}
 }
-
-
