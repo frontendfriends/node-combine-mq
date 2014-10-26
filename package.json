@@ -1,6 +1,6 @@
 {
 	"name": "combine-mq",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"description": "Combine matching media queries into one media query definition.",
 	"main": "lib/combine-mq.js",
 	"engines": {

@@ -3,9 +3,9 @@
 * @file Combine MQ Test
 * @version 0.1.0
 * @author {@link http://github.com/furzeface Daniel Furze}
-* @link https://github.com/buildingblocks/node-combine-mq
+* @link https://github.com/frontendfriends/node-combine-mq
 *
-* Copyright (c) 2014 Building Blocks
+* Copyright (c) 2014 Daniel Furze
 * Licensed under the MIT license.
 *
 */
