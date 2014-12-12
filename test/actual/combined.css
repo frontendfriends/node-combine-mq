@@ -121,6 +121,28 @@ img {
 
 }
 
+@media (min-width: 30em) and (min-device-pixel-ratio: 1.5) {
+	#monitor-width {
+		width:480px;
+	}
+
+}
+
+@media (min-width: 30em) and (min-device-pixel-ratio: 2) {
+	#monitor-width {
+		width:480px;
+		background: #000;
+	}
+
+}
+
+@media (min-width: 30em) and (min-device-pixel-ratio: 4) {
+	#monitor-width {
+		color: #fff;
+	}
+
+}
+
 @media (min-width: 60.625em) {
 	#monitor-width {
 		width:970px;
@@ -128,9 +150,37 @@ img {
 
 }
 
+@media (min-width: 30em) and (min-device-pixel-ratio: 5) {
+	#monitor-width {
+		color: #fff;
+	}
+
+}
+
 @media (min-width: 37.5em) {
 	#monitor-width {
 		width:600px;
+	}
+
+}
+
+@media (min-width: 32em) {
+	#monitor-width {
+		height:480px;
+	}
+
+}
+
+@media (min-width: 34em) {
+	#monitor-width {
+		height:480px;
+	}
+
+}
+
+@media (min-width: 30em) {
+	#monitor-width {
+		height:480px;
 	}
 
 }
