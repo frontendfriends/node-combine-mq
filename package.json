@@ -1,6 +1,6 @@
 {
 	"name": "combine-mq",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"description": "Combine matching media queries into one media query definition.",
 	"main": "lib/combine-mq.js",
 	"engines": {
@@ -46,6 +46,10 @@
 		{
 			"name": "Thomas Dobber",
 			"email": "thomasdobber@gmail.com"
+		},
+		{
+			"name": "Loz Calver",
+			"email": "lozcalver@bigfork.co.uk"
 		}
 	],
 	"license": "MIT",
