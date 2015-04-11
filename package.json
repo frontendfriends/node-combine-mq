@@ -58,7 +58,7 @@
 	},
 	"homepage": "https://github.com/frontendfriends/node-combine-mq",
 	"dependencies": {
-		"chalk": "^0.5.1",
+		"chalk": "^1.0.0",
 		"commander": "^2.3.0",
 		"css-parse": "^2.0.0",
 		"css-stringify": "^2.0.0",
@@ -69,14 +69,14 @@
 	},
 	"devDependencies": {
 		"grunt-contrib-clean": "^0.6.0",
-		"grunt-contrib-jshint": "^0.10.0",
+		"grunt-contrib-jshint": "^0.11.1",
 		"grunt-contrib-nodeunit": "^0.4.1",
 		"grunt-contrib-watch": "^0.6.1",
 		"grunt-jsdoc": "^0.5.7",
 		"grunt-mocha-test": "^0.12.2",
 		"grunt-notify": "^0.4.1",
 		"jshint-stylish": "^1.0.0",
-		"load-grunt-tasks": "^1.0.0",
+		"load-grunt-tasks": "^3.1.0",
 		"time-grunt": "^1.0.0"
 	},
 	"scripts": {
